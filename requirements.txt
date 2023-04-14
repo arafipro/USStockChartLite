@@ -1,0 +1,15 @@
+# utility
+python-dateutil
+
+# Ta-Lib
+TA-Lib
+
+# Streamlit
+streamlit
+
+# plotly
+plotly
+
+# finance data
+yfinance
+pandas-datareader
