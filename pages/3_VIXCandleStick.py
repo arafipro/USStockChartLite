@@ -4,7 +4,6 @@ import plotly.graph_objs as go
 import streamlit as st
 
 from datas.holidays import data
-from packages.indicators import BB, SMA
 from packages.yahoo.VIXData import VIXDataFromDD
 
 st.set_page_config(page_title="VIXローソク足チャート", layout="wide")

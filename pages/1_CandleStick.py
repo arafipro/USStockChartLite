@@ -5,7 +5,6 @@ import plotly.graph_objs as go
 import streamlit as st
 
 from datas.holidays import data
-from packages.indicators import BB, SMA
 from packages.yahoo.StockHistoricalData import stockDataFromDD
 
 st.set_page_config(page_title="米国株価チャート", layout="wide")
