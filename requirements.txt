@@ -1,9 +1,6 @@
 # utility
 python-dateutil
 
-# Ta-Lib
-TA-Lib
-
 # Streamlit
 streamlit
 

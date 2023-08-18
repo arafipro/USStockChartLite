@@ -21,24 +21,7 @@ else:
     fill_on = None
 
 df = VIXDataFromDD(period, end_day)
-df = SMA(df, 50)
-df = SMA(df, 200)
-df = BB(df, 2)
-
 fig = go.Figure()
-fig.add_trace(go.Scatter(x=df.index, y=df.SMA50, name="50day SMA"))
-fig.add_trace(go.Scatter(x=df.index, y=df.SMA200, name="200day SMA"))
-fig.add_trace(
-    go.Scatter(
-        x=df.index, y=df.Lower, name="-2σ", fill=None, line=dict(color="#2962ff")
-    )
-)
-fig.add_trace(
-    go.Scatter(
-        x=df.index, y=df.Upper, name="+2σ", fill=fill_on, line=dict(color="#2962ff")
-    )
-)
-fig.add_trace(go.Scatter(x=df.index, y=df.STD, name="base", line=dict(color="#ff6d00")))
 fig.add_trace(
     go.Candlestick(
         name="price",
