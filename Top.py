@@ -1,7 +1,7 @@
 import streamlit as st
 import re
 
-st.header("米国相場各種チャート")
+st.header("米国相場各種チャート簡易版")
 st.markdown(
 	'''
 	米国株のティッカーを入力すると以下のチャートを見ることができます。
